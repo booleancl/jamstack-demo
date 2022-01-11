@@ -3,7 +3,9 @@
       <div class="container px-5">
           <h1 class="masthead-heading mb-0">{{ page.title }}</h1>
           <h2 class="masthead-subheading mb-0">{{ page.subtitle }}</h2>
-        {% include counter.html %}
+          {% if page.counter == true %}
+            {% include counter.html %}
+          {% endif %}  
       </div>
   </div>
   <div class="bg-circle-1 bg-circle"></div>
